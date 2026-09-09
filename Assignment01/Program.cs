@@ -31,7 +31,29 @@ namespace Assignment01
             int damageFromCast = (int)damagePerSecond;
             int damageFromConvert = Convert.ToInt32(characterLevelAsDouble);
 
+            Console.WriteLine("+----------------------------------------------------+");
+            Console.WriteLine("|                 RANGER STAT CARD                   |");
+            Console.WriteLine("+----------------------------------------------------+");
+            Console.WriteLine($"| Game            : {GameTitle}");
+            Console.WriteLine($"| Character       : {characterName}");
+            Console.WriteLine($"| Class           : {characterClass}");
+            Console.WriteLine($"| Build           : {buildName}");
+            Console.WriteLine($"| Build Rank      : {buildRank}");
+            Console.WriteLine($"| Level           : {characterLevel}");
+            Console.WriteLine($"| Critical Chance : {criticalChance}%");
+            Console.WriteLine($"| Damage Per Sec  : {damagePerSecond}");
+            Console.WriteLine($"| Endgame Ready   : {isEndgameReady}");
+            Console.WriteLine("+----------------------------------------------------+");
 
+            Console.WriteLine();
+
+            Console.WriteLine("+----------------------------------------------------+");
+            Console.WriteLine("|                  TYPE CONVERSION                   |");
+            Console.WriteLine("+----------------------------------------------------+");
+            Console.WriteLine($"| Level as double       : {characterLevelAsDouble}");
+            Console.WriteLine($"| DPS with cast         : {damageFromCast}");
+            Console.WriteLine($"| DPS with Convert      : {damageFromConvert}");
+            Console.WriteLine("+----------------------------------------------------+");
         }
     }
 }
