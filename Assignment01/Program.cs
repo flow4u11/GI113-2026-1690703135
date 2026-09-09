@@ -31,6 +31,7 @@ namespace Assignment01
             int damageFromCast = (int)damagePerSecond;
             int damageFromConvert = Convert.ToInt32(characterLevelAsDouble);
 
+            //Output
             Console.WriteLine("+----------------------------------------------------+");
             Console.WriteLine("|                 RANGER STAT CARD                   |");
             Console.WriteLine("+----------------------------------------------------+");
@@ -51,8 +52,8 @@ namespace Assignment01
             Console.WriteLine("|                  TYPE CONVERSION                   |");
             Console.WriteLine("+----------------------------------------------------+");
             Console.WriteLine($"| Level as double       : {characterLevelAsDouble}");
-            Console.WriteLine($"| DPS with cast         : {damageFromCast}");
-            Console.WriteLine($"| DPS with Convert      : {damageFromConvert}");
+            Console.WriteLine($"| DPS with cast         : {damageFromCast}");        
+            Console.WriteLine($"| DPS with Convert      : {damageFromConvert}");            //Convert double to int
             Console.WriteLine("+----------------------------------------------------+");
         }
     }
