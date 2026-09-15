@@ -2,7 +2,7 @@
  * Student ID : 1690703135
  * Name       : Assignment01
  * Section    : 129C
- * No.        : N/A
+ * No.        : 27
  * Course     : GI113 Computer Programming (GI)
  */
 
