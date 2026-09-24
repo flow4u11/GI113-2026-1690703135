@@ -24,7 +24,7 @@ namespace Lab06
             Console.WriteLine("[3] Ultimate Skill");
             Console.WriteLine();
 
-            Console.Write("Choose your action [1-3]: ");
+            Console.Write("Choose your action (1-3): ");
 
             bool inputOk = int.TryParse(Console.ReadLine(), out int action);
 
