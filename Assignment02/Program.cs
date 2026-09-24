@@ -14,7 +14,7 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
-            // Forge settings
+            // Define constants for material names, smelting and salvage rates, and maximum batch size
             const string MaterialName = "Fire Opal";
             const string OreName = "Fire Opal Ore";
             const string IngotName = "Fire Opal Ingot";
@@ -23,7 +23,7 @@ namespace Assignment02
             const double SalvageRate = 0.25;
             const double MaxBatch = 300;
 
-            // Display forge information
+            // Display the forge information
             Console.WriteLine("===================================");
             Console.WriteLine("            THE FORGE");
             Console.WriteLine("===================================");
@@ -49,12 +49,12 @@ namespace Assignment02
             Console.WriteLine();
 
             // Check if the amount is valid
-            if (amountOk && amount > 0 && amount <= MaxBatch)
+            if (amountOk && amount > 0 && amount <= MaxBatch)           
             {
                 // Smelt Ore into Ingot
-                if (menuOk && (menu == 'S' || menu == 's'))
+                if (menuOk && (menu == 'S' || menu == 's'))             // Check if the user chose to smelt ore into ingots
                 {
-                    double ingotAmount = amount * SmeltRate;
+                    double ingotAmount = amount * SmeltRate;            // Calculate ingot amount based on smelt rate (Ore multiplied by SmeltRate = Ingot)
 
                     Console.WriteLine("Smelting complete!");
                     Console.WriteLine(
@@ -62,16 +62,16 @@ namespace Assignment02
                 }
 
                 // Breakdown Ingot into Ore
-                else if (menuOk && (menu == 'B' || menu == 'b'))
+                else if (menuOk && (menu == 'B' || menu == 'b'))        // Check if the user chose to breakdown ingots into ore
                 {
-                    double oreAmount = amount / SalvageRate;
+                    double oreAmount = amount / SalvageRate;            // Calculate ore amount based on salvage rate (Ingot divided by SalvageRate = Ore)
 
                     Console.WriteLine("Breakdown complete!");
                     Console.WriteLine(
                         $"=> {amount:F2} {IngotName} ==> {oreAmount:F2} {OreName}");
                 }
 
-                // Invalid menu
+                // Invalid menu input
                 else
                 {
                     Console.WriteLine("Invalid action. Please enter S or B.");
